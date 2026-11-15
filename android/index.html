@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Clipy para Android</title>
+  <meta name="description" content="Instala a app Android do Clipy e liga-a ao teu computador com um QR.">
+  <meta name="theme-color" content="#0f0e0c">
+  <meta property="og:title" content="Clipy para Android">
+  <meta property="og:description" content="Os teus agentes no bolso. Instala e liga ao computador com um QR.">
+  <meta property="og:image" content="../og.png">
+  <link rel="icon" href="../favicon.svg">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <script type="module" crossorigin src="../assets/android-DLT1xaF0.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/tokens-DB6kLEO0.js">
+  <link rel="modulepreload" crossorigin href="../assets/clipy-particles-ChjjgSgT.js">
+  <link rel="stylesheet" crossorigin href="../assets/tokens-BfKX-kX-.css">
+  <link rel="stylesheet" crossorigin href="../assets/clipy-particles-C-WLIGPs.css">
+  <link rel="stylesheet" crossorigin href="../assets/android-BpOrWmLP.css">
+</head>
+<body data-theme="brasa" class="grain dl-page">
+  <div class="sky" aria-hidden="true"><i class="glow"></i><i class="dots"></i></div>
+
+  <header class="nav solid">
+    <a class="brand" href="../" aria-label="Clipy, página inicial"><span class="brand-clip" data-clip="mark"></span><b>clipy</b></a>
+    <span class="dl-crumb">Android</span>
+  </header>
+
+  <main class="dl">
+    <section class="dl-hero">
+      <div class="dl-phone" aria-hidden="true">
+        <div class="dl-screen">
+          <canvas id="dl-face" width="240" height="240"></canvas>
+          <b>Clipy</b>
+          <span class="dl-status"><i></i> ligado ao computador</span>
+        </div>
+      </div>
+      <div class="dl-copy">
+        <span class="kicker">App Android</span>
+        <h1>Os teus agentes,<br><em>no bolso.</em></h1>
+        <p class="lede">Conversas, aprovações, chamadas de voz e o que os agentes te querem mostrar. A app liga-se ao Clipy do teu computador: os mesmos agentes, ao mesmo tempo.</p>
+        <div class="cta left">
+          <a class="btn primary" id="dl-apk" href="../clipy.apk" download="Clipy.apk">
+            <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22A11.4 11.4 0 0 0 12 8.13c-1.77 0-3.43.38-4.92 1.01L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
+            Descarregar a app
+          </a>
+          <span class="dl-meta" id="dl-meta">APK · 0.7 MB · Android 8 ou mais recente</span>
+        </div>
+        <figure class="dl-qr" id="dl-qr" hidden>
+          <img src="../qr-android.svg" alt="QR desta página" width="132" height="132">
+          <figcaption><b>Estás no computador?</b><span>Aponta a câmara do telemóvel ao QR para abrir esta página lá.</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <ol class="dl-steps">
+      <li>
+        <span class="n">1</span>
+        <h3>Descarrega e instala</h3>
+        <p>Abre o <b>Clipy.apk</b>. Na primeira vez o Android pergunta se o navegador pode instalar apps: carrega em <b>Definições → Permitir desta origem</b> e volta atrás.</p>
+      </li>
+      <li>
+        <span class="n">2</span>
+        <h3>No computador, abre o QR</h3>
+        <p>No Clipy do computador: <b>Definições → Telemóvel → Ligar um telemóvel</b>, com <b>App Android</b> escolhido. O código serve uma vez e dura 5 minutos.</p>
+      </li>
+      <li>
+        <span class="n">3</span>
+        <h3>Lê o QR com a app</h3>
+        <p>Abre o Clipy no telemóvel e carrega em <b>Ler o QR</b>. Fica ligado a esse computador, com os mesmos agentes, e lembra-se dele para a próxima.</p>
+      </li>
+    </ol>
+
+    <section class="dl-notes">
+      <div><h4>Na mesma rede</h4><p>O telemóvel fala diretamente com o teu computador, sem servidores pelo meio. Em casa basta o mesmo Wi-Fi; fora de casa usa o <a href="https://tailscale.com" target="_blank" rel="noopener">Tailscale</a>.</p></div>
+      <div><h4>Sem conta</h4><p>O QR dá ao telemóvel uma chave só dele. Podes desligá-lo a qualquer momento em Definições → Telemóvel no computador.</p></div>
+      <div><h4>iPhone?</h4><p>Abre o mesmo QR do computador com a câmara (escolhe <b>Navegador / iPhone</b>) e adiciona ao ecrã principal.</p></div>
+    </section>
+
+    <footer class="foot">
+      <span>Clipy · Apache-2.0</span>
+      <a href="../">Página inicial</a>
+      <a id="dl-all" href="https://github.com/Duartepxto/clipy-site/releases/latest">Todas as transferências</a>
+    </footer>
+  </main>
+
+</body>
+</html>
