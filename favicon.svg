@@ -3,7 +3,7 @@
     <stop offset="0" stop-color="#8f8a80"/><stop offset=".38" stop-color="#f7f2e8"/><stop offset=".55" stop-color="#d9d3c6"/><stop offset="1" stop-color="#7c776d"/>
   </linearGradient>
   <linearGradient id="gold" x1="-40" y1="-40" x2="40" y2="200" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#fff1cf"/><stop offset=".35" stop-color="#f6cf7e"/><stop offset=".7" stop-color="#d79a3e"/><stop offset="1" stop-color="#a8702a"/>
+    <stop offset="0" stop-color="#ffe2c2"/><stop offset=".35" stop-color="#e6a56a"/><stop offset=".7" stop-color="#b8743f"/><stop offset="1" stop-color="#7c4a27"/>
   </linearGradient>
   <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1a1815"/><stop offset="1" stop-color="#080807"/></linearGradient>
   <radialGradient id="glow" cx="50%" cy="56%" r="55%"><stop offset="0" stop-color="#ffb04d" stop-opacity=".22"/><stop offset=".55" stop-color="#ffb04d" stop-opacity=".05"/><stop offset="1" stop-color="#ffb04d" stop-opacity="0"/></radialGradient>
@@ -11,5 +11,5 @@
   <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="5"/></filter>
 </defs>
   <rect width="64" height="64" rx="14" fill="url(#bg)"/><rect width="64" height="64" rx="14" fill="url(#glow)"/>
-  <g transform="translate(32 33.5) rotate(-12) scale(.22) translate(0 -81)"><path d="M -10 130 L -10 0 A 10 10 0 0 1 10 0 L 10 175 A 23 23 0 0 1 -36 175 L -36 0 A 36 36 0 0 1 36 0 L 36 120" fill="none" stroke="#f2c46e" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/></g>
+  <g transform="translate(32 33.5) rotate(-12) scale(.22) translate(0 -81)"><path d="M -10 130 L -10 0 A 10 10 0 0 1 10 0 L 10 175 A 23 23 0 0 1 -36 175 L -36 0 A 36 36 0 0 1 36 0 L 36 120" fill="none" stroke="#e3a46a" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/></g>
 </svg>
