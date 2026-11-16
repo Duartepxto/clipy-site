@@ -1,86 +1,73 @@
 <!doctype html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Clipy para Android</title>
-  <meta name="description" content="Instala a app Android do Clipy e liga-a ao teu computador com um QR.">
+  <title>Clipy for Android</title>
+  <meta name="description" content="Install the Clipy Android app and pair it with your computer using a QR code.">
   <meta name="theme-color" content="#0f0e0c">
-  <meta property="og:title" content="Clipy para Android">
-  <meta property="og:description" content="Os teus agentes no bolso. Instala e liga ao computador com um QR.">
+  <meta property="og:title" content="Clipy for Android">
+  <meta property="og:description" content="Your agents, in your pocket. Install and pair with your computer in a minute.">
   <meta property="og:image" content="../og.png">
   <link rel="icon" href="../favicon.svg">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-  <script type="module" crossorigin src="../assets/android-D34Ah7qb.js"></script>
-  <link rel="modulepreload" crossorigin href="../assets/intro-dnGxPThm.js">
-  <link rel="stylesheet" crossorigin href="../assets/intro-BfKX-kX-.css">
-  <link rel="stylesheet" crossorigin href="../assets/android-BhuTTXlD.css">
+  <script type="module" crossorigin src="../assets/android-DaGsE5g3.js"></script>
+  <link rel="modulepreload" crossorigin href="../assets/intro-C39DGfXq.js">
+  <link rel="stylesheet" crossorigin href="../assets/intro-B_9eifOO.css">
+  <link rel="stylesheet" crossorigin href="../assets/android-DZYrWr9J.css">
 </head>
-<body data-theme="brasa" class="grain dl-page">
-  <div class="sky" aria-hidden="true"><i class="glow"></i><i class="dots"></i></div>
-
+<body>
   <header class="nav solid">
-    <a class="brand" href="../" aria-label="Clipy, página inicial"><img class="brand-mark" src="../logo-mark.svg" alt="" height="34"><b>clipy</b></a>
-    <span class="dl-crumb">Android</span>
+    <a class="brand" href="../" aria-label="Clipy home"><img src="../logo-mark.svg" alt="" width="26" height="26"><span>clipy</span></a>
+    <span class="crumb">/ Android</span>
+    <a class="btn btn-sm" href="../" style="margin-left:auto">Back to the site</a>
   </header>
 
-  <main class="dl">
-    <section class="dl-hero">
-      <div class="dl-phone" aria-hidden="true">
-        <div class="dl-screen">
-          <canvas id="dl-face" width="240" height="240"></canvas>
-          <b>Clipy</b>
-          <span class="dl-status"><i></i> ligado ao computador</span>
-        </div>
-      </div>
-      <div class="dl-copy">
-        <span class="kicker">App Android</span>
-        <h1>Os teus agentes,<br><em>no bolso.</em></h1>
-        <p class="lede">Conversas, aprovações, chamadas de voz e o que os agentes te querem mostrar. A app liga-se ao Clipy do teu computador: os mesmos agentes, ao mesmo tempo.</p>
-        <div class="cta left">
-          <a class="btn primary" id="dl-apk" href="../clipy.apk" download="Clipy.apk">
+  <main class="droid-page">
+    <section class="d-hero">
+      <div class="d-copy">
+        <span class="eyebrow">Android app</span>
+        <h1>Your agents,<br><span class="grad">in your pocket.</span></h1>
+        <p class="lede">Conversations, approvals, voice calls and everything your agents want to show you. The app pairs with Clipy on your computer — same agents, same moment.</p>
+        <div class="cta">
+          <a class="btn btn-primary" id="dl-apk" href="../clipy.apk" download="Clipy.apk">
             <svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path fill="currentColor" d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22A11.4 11.4 0 0 0 12 8.13c-1.77 0-3.43.38-4.92 1.01L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
-            Descarregar a app
+            Download the app
           </a>
-          <span class="dl-meta" id="dl-meta">APK · 0.7 MB · Android 8 ou mais recente</span>
         </div>
-        <figure class="dl-qr" id="dl-qr" hidden>
-          <img src="../qr-android.svg" alt="QR desta página" width="132" height="132">
-          <figcaption><b>Estás no computador?</b><span>Aponta a câmara do telemóvel ao QR para abrir esta página lá.</span></figcaption>
+        <p class="fine" id="dl-meta">APK · Android 8 or newer</p>
+        <figure class="d-qr" id="dl-qr" hidden>
+          <img src="../qr-android.svg" alt="QR code for this page" width="120" height="120">
+          <figcaption><b>On your computer?</b><span>Point your phone’s camera at the QR to open this page there.</span></figcaption>
         </figure>
       </div>
+      <div class="d-phone" aria-hidden="true">
+        <div class="d-screen">
+          <canvas id="dl-face"></canvas>
+          <b>Clipy</b>
+          <span class="d-status"><i></i>connected to your computer</span>
+        </div>
+      </div>
     </section>
 
-    <ol class="dl-steps">
-      <li>
-        <span class="n">1</span>
-        <h3>Descarrega e instala</h3>
-        <p>Abre o <b>Clipy.apk</b>. Na primeira vez o Android pergunta se o navegador pode instalar apps: carrega em <b>Definições → Permitir desta origem</b> e volta atrás.</p>
-      </li>
-      <li>
-        <span class="n">2</span>
-        <h3>No computador, abre o QR</h3>
-        <p>No Clipy do computador: <b>Definições → Telemóvel → Ligar um telemóvel</b>, com <b>App Android</b> escolhido. O código serve uma vez e dura 5 minutos.</p>
-      </li>
-      <li>
-        <span class="n">3</span>
-        <h3>Lê o QR com a app</h3>
-        <p>Abre o Clipy no telemóvel e carrega em <b>Ler o QR</b>. Fica ligado a esse computador, com os mesmos agentes, e lembra-se dele para a próxima.</p>
-      </li>
+    <ol class="d-steps">
+      <li><span>1</span><h3>Download and install</h3><p>Open <b>Clipy.apk</b>. The first time, Android asks whether your browser may install apps: tap <b>Settings → Allow from this source</b> and go back.</p></li>
+      <li><span>2</span><h3>Show the QR on your computer</h3><p>In Clipy on your computer: <b>Settings → Phone → Pair a phone</b>, with <b>Android app</b> selected. The code works once and lasts 5 minutes.</p></li>
+      <li><span>3</span><h3>Scan it with the app</h3><p>Open Clipy on your phone and tap <b>Scan the QR</b>. It stays paired with that computer and remembers it next time.</p></li>
     </ol>
 
-    <section class="dl-notes">
-      <div><h4>Na mesma rede</h4><p>O telemóvel fala diretamente com o teu computador, sem servidores pelo meio. Em casa basta o mesmo Wi-Fi; fora de casa usa o <a href="https://tailscale.com" target="_blank" rel="noopener">Tailscale</a>.</p></div>
-      <div><h4>Sem conta</h4><p>O QR dá ao telemóvel uma chave só dele. Podes desligá-lo a qualquer momento em Definições → Telemóvel no computador.</p></div>
-      <div><h4>iPhone?</h4><p>Abre o mesmo QR do computador com a câmara (escolhe <b>Navegador / iPhone</b>) e adiciona ao ecrã principal.</p></div>
+    <section class="d-notes">
+      <div><h4>Same network</h4><p>Your phone talks straight to your computer, no servers in between. At home, the same Wi-Fi is enough; away, use <a href="https://tailscale.com" target="_blank" rel="noopener">Tailscale</a>.</p></div>
+      <div><h4>No account</h4><p>The QR gives the phone a key of its own. Unpair it anytime in Settings → Phone on your computer.</p></div>
+      <div><h4>iPhone?</h4><p>Scan the same QR with the camera (pick <b>Browser / iPhone</b>) and add it to your Home Screen.</p></div>
     </section>
-
-    <footer class="foot">
-      <span>Clipy · Apache-2.0</span>
-      <a href="../">Página inicial</a>
-      <a id="dl-all" href="https://github.com/Duartepxto/clipy-site/releases/latest">Todas as transferências</a>
-    </footer>
   </main>
+
+  <footer class="foot">
+    <a class="brand" href="../"><img src="../logo-mark.svg" alt="" width="22" height="22"><span>clipy</span></a>
+    <span>Apache-2.0</span>
+    <nav aria-label="Footer"><a href="../">Home</a><a id="dl-all" href="https://github.com/Duartepxto/clipy-site/releases/latest">All downloads</a></nav>
+  </footer>
 
 </body>
 </html>

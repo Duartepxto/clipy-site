@@ -1,193 +1,254 @@
 <!doctype html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Clipy — A Edição Bronze</title>
-  <meta name="description" content="O Clipy junta o Claude Code e o OpenCode numa equipa de agentes de IA que vive num mapa à tua volta. No teu computador, com as tuas contas, e no teu bolso.">
-  <meta name="theme-color" content="#0a0908">
-  <meta property="og:title" content="Clipy — A Edição Bronze">
-  <meta property="og:description" content="A tua equipa de agentes de IA num mapa à tua volta. No teu computador, com as tuas contas, e no teu bolso.">
+  <title>Clipy — your AI agents, on a map around you</title>
+  <meta name="description" content="Clipy turns the Claude Code and OpenCode you already use into a team of AI agents that lives on a map around you. On your computer, with your accounts, and in your pocket.">
+  <meta name="theme-color" content="#0f0e0c">
+  <meta property="og:title" content="Clipy — your AI agents, on a map around you">
+  <meta property="og:description" content="A team of AI agents on your computer, with your accounts. Watch them work, approve what matters, take them with you.">
   <meta property="og:image" content="./og.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="./favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clipy","applicationCategory":"ProductivityApplication","operatingSystem":"Windows, macOS, Android, iOS","license":"https://www.apache.org/licenses/LICENSE-2.0","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
-  <script type="module" crossorigin src="./assets/main-Bi9lTmCl.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/intro-dnGxPThm.js">
-  <link rel="stylesheet" crossorigin href="./assets/intro-BfKX-kX-.css">
-  <link rel="stylesheet" crossorigin href="./assets/main-DZCjysjV.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clipy","applicationCategory":"ProductivityApplication","operatingSystem":"Windows, macOS, Android, iOS","license":"https://www.apache.org/licenses/LICENSE-2.0","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script type="module" crossorigin src="./assets/main-BwiXjEih.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/intro-C39DGfXq.js">
+  <link rel="stylesheet" crossorigin href="./assets/intro-B_9eifOO.css">
 </head>
-<body class="ed">
-  <header class="bar" id="bar">
-    <a class="bar-brand" href="#top" aria-label="Clipy"><img src="./logo-mark.svg" alt="" height="30"><b>clipy</b></a>
-    <span class="bar-ed">Edição Bronze <em>v0.5</em></span>
-    <nav class="bar-links" aria-label="Capítulos">
-      <a href="#equipa">A equipa</a><a href="#bolso">No bolso</a><a href="#privado">Privado</a>
+<body>
+  <a class="skip" href="#team">Skip to content</a>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#top" aria-label="Clipy home"><img src="./logo-mark.svg" alt="" width="26" height="26"><span>clipy</span></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#team">Team</a><a href="#work">Work</a><a href="#tools">Tools</a><a href="#pocket">Phone</a><a href="#private">Privacy</a>
     </nav>
-    <a class="bar-cta" href="#transferir">Transferir</a>
+    <a class="nav-gh" href="https://github.com/Duartepxto/Clipy" aria-label="Clipy on GitHub"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.06-.49.06-.49.8.06 1.23.83 1.23.83.72 1.22 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+    <a class="btn btn-sm btn-primary" href="#download">Download</a>
   </header>
 
-  <!-- índice fixo, com numeração romana -->
-  <nav class="index" id="index" aria-label="Índice">
-    <a href="#equipa"><span>A equipa</span><i>I</i></a>
-    <a href="#conversas"><span>Conversas</span><i>II</i></a>
-    <a href="#palco"><span>O palco</span><i>III</i></a>
-    <a href="#bolso"><span>No bolso</span><i>IV</i></a>
-    <a href="#voz"><span>Voz</span><i>V</i></a>
-    <a href="#privado"><span>Privado</span><i>VI</i></a>
-    <a href="#transferir"><span>Transferir</span><i>VII</i></a>
-  </nav>
-
   <main id="top">
-    <!-- abertura: a moldura com o nome da edição; o Clipy forma-se lá dentro e a moldura abre-se ao descer -->
-    <section class="gate" id="gate" aria-labelledby="gate-t">
-      <div class="gate-stick">
-        <canvas class="gate-clip" id="gate-clip" aria-hidden="true"></canvas>
-        <div class="gate-frame" id="gate-frame" aria-hidden="true"></div>
-        <div class="gate-title" id="gate-t">
-          <span class="g-small">Clipy apresenta</span>
-          <span class="g-big">A Edição <em>Bronze</em></span>
-          <span class="g-small">Novembro 2026 · v0.5</span>
+    <!-- ───────────── Hero ───────────── -->
+    <section class="hero" aria-labelledby="hero-t">
+      <canvas class="hero-clip" id="hero-clip" aria-hidden="true"></canvas>
+      <div class="hero-copy">
+        <a class="pill" href="https://github.com/Duartepxto/clipy-site/releases/latest"><b>New</b> Voice calls, phone emulator and a custom installer <span aria-hidden="true">→</span></a>
+        <h1 id="hero-t">Your AI agents,<br><span class="grad">on a map around you.</span></h1>
+        <p class="lede">Clipy turns the Claude Code and OpenCode you already use into a team. Each agent gets a face, a folder and a job. You watch them work, approve what matters and take them with you.</p>
+        <div class="cta">
+          <a class="btn btn-primary" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M0 2.3 6.5 1.4v6.2H0zm7.3-1L16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zm7.3 0H16V16l-8.7-1.2z"/></svg>Download for Windows</a>
+          <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M11.2 8.5c0-1.6 1.3-2.4 1.4-2.4-.8-1.1-2-1.3-2.4-1.3-1-.1-2 .6-2.5.6s-1.3-.6-2.2-.6C4.4 4.8 3.2 5.5 2.6 6.6c-1.2 2.1-.3 5.2.9 6.9.6.8 1.2 1.7 2.1 1.7.8 0 1.2-.5 2.2-.5s1.3.5 2.2.5c.9 0 1.5-.8 2-1.7.6-.9.9-1.9.9-1.9s-1.7-.7-1.7-3.1zM9.6 3.6c.5-.6.8-1.4.7-2.2-.7 0-1.5.5-2 1-.4.5-.8 1.3-.7 2.1.8.1 1.5-.4 2-.9z"/></svg>macOS</a>
+          <a class="btn" href="./android/"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M7.5 3.5h9v17h-9z M11 17.5h2"/></svg>Android</a>
         </div>
-        <div class="hero" id="hero">
-          <h1><span class="h-l">Agentes que</span> <em class="h-l">ficam contigo.</em></h1>
-          <p>O Clipy junta o Claude Code e o OpenCode que já usas numa equipa que vive num mapa à tua volta. Trabalham no teu computador, com as tuas contas. E vão contigo no bolso.</p>
-          <div class="hero-cta">
-            <a class="btn light" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe">Transferir para Windows</a>
-            <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">Mac</a>
-            <a class="btn" href="./android/">Android</a>
-            <button class="btn play" id="play" type="button"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="M4.5 2.6v10.8c0 .5.55.8.97.53l8.4-5.4a.63.63 0 0 0 0-1.06l-8.4-5.4a.63.63 0 0 0-.97.53z"/></svg>Ver o trailer</button>
+        <p class="fine">Free and open source · Windows, macOS, Android and any phone browser</p>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><i></i></div>
+    </section>
+
+    <!-- engines strip -->
+    <section class="strip" aria-label="Works with">
+      <span>Runs on the agents you already have</span>
+      <div class="strip-logos">
+        <b><i class="mark claude">✳</i>Claude Code</b>
+        <b><i class="mark oc">◧</i>OpenCode</b>
+        <b><i class="mark mcp">⌁</i>MCP servers</b>
+        <b><i class="mark">◎</i>Your skills</b>
+      </div>
+    </section>
+
+    <!-- ───────────── Team map ───────────── -->
+    <section class="sec" id="team" aria-labelledby="team-t">
+      <header class="sec-head">
+        <span class="eyebrow">The map</span>
+        <h2 id="team-t">A team that sits <span class="grad">around you.</span></h2>
+        <p>You in the middle, Clipy beside you, teams in orbit — each with a chief. Ask for something and watch the work travel down the line to the right agent. Try it.</p>
+      </header>
+
+      <div class="map" id="map" data-theme="brasa">
+        <div class="map-grid" aria-hidden="true"></div>
+        <canvas class="map-flows" id="map-flows" aria-hidden="true"></canvas>
+        <svg class="map-lines" id="map-lines" aria-hidden="true"></svg>
+        <div class="map-nodes" id="map-nodes"></div>
+        <div class="map-ask" role="group" aria-label="Try asking the team">
+          <span class="map-ask-l">Ask Clipy</span>
+          <div class="chips" id="map-chips"></div>
+        </div>
+        <div class="map-themes" role="group" aria-label="Map theme">
+          <button data-theme="brasa" class="on" aria-label="Ember theme" style="--a:#ffb04d;--b:#3a2414"></button>
+          <button data-theme="noite" aria-label="Starry night theme" style="--a:#7db4ff;--b:#0d1530"></button>
+          <button data-theme="por-do-sol" aria-label="Sunset theme" style="--a:#ff7a3d;--b:#2a1220"></button>
+          <button data-theme="aurora" aria-label="Aurora theme" style="--a:#29f2a6;--b:#0a1d1b"></button>
+          <button data-theme="oceano" aria-label="Ocean theme" style="--a:#5cc8ff;--b:#072636"></button>
+        </div>
+      </div>
+
+      <div class="grid3">
+        <article class="feat"><h3>Teams and chiefs</h3><p>Group agents by what they do. The chief of each team routes requests to the right teammate.</p></article>
+        <article class="feat"><h3>Work you can see</h3><p>Hand-offs fly down the line as light, with a label saying what’s inside. No log digging.</p></article>
+        <article class="feat"><h3>Status at a glance</h3><p>Under every face: working, replying, needs you. Agents set their own labels on long jobs.</p></article>
+      </div>
+    </section>
+
+    <!-- ───────────── Work / chat ───────────── -->
+    <section class="sec" id="work" aria-labelledby="work-t">
+      <header class="sec-head">
+        <span class="eyebrow">Conversations</span>
+        <h2 id="work-t">You ask. They do. <span class="grad">You stay in charge.</span></h2>
+        <p>Every step in plain sight. Approvals land where you are — on your desk or your phone — and agents show you what they made instead of telling you about it.</p>
+      </header>
+
+      <div class="work">
+        <div class="tabs" role="tablist" aria-label="Examples">
+          <button role="tab" aria-selected="true" data-demo="approve">Approve what matters</button>
+          <button role="tab" aria-selected="false" data-demo="show">Show, don’t tell</button>
+          <button role="tab" aria-selected="false" data-demo="build">Build a team</button>
+        </div>
+        <div class="app-win">
+          <div class="win-bar"><i></i><i></i><i></i><span id="chat-title">Max · Engineering</span></div>
+          <div class="chat">
+            <aside class="chat-side" aria-hidden="true">
+              <canvas id="chat-face"></canvas>
+              <b id="chat-name">Max</b>
+              <span id="chat-role">Engineer</span>
+              <em id="chat-state">free</em>
+            </aside>
+            <div class="chat-main">
+              <div class="chat-log" id="chat-log" aria-live="polite"></div>
+              <div class="composer" aria-hidden="true"><span id="composer-text">Message Max…</span><i class="send"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 19V5 M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></i></div>
+            </div>
           </div>
         </div>
-        <span class="scroll-hint" id="hint" aria-hidden="true">Desce</span>
+      </div>
+
+      <div class="grid3">
+        <article class="feat"><h3>Ask once, always, or never</h3><p>Pick per agent: asks first, edits alone, or full auto. You can change your mind mid-conversation.</p></article>
+        <article class="feat"><h3>Changes, request by request</h3><p>Every file an agent touched, grouped by what you asked, with before and after — and undo.</p></article>
+        <article class="feat"><h3>Channels</h3><p>Put agents in a room. They read each other, hand over with @Name and reply when it’s their turn.</p></article>
       </div>
     </section>
 
-    <!-- I · a equipa -->
-    <section class="ch night" id="equipa" data-n="I">
-      <header class="ch-head">
-        <span class="ch-n">I</span>
-        <h2 class="reveal-words">Uma equipa, <em>à tua volta.</em></h2>
-        <p class="ch-lede">Tu ao centro, as equipas à volta, cada uma com um Chief. Pedes uma coisa e vês o trabalho a viajar pela linha até ao agente certo.</p>
+    <!-- ───────────── Revolver / tools ───────────── -->
+    <section class="sec" id="tools" aria-labelledby="tools-t">
+      <header class="sec-head">
+        <span class="eyebrow">The revolver</span>
+        <h2 id="tools-t">Every agent comes with <span class="grad">a whole workstation.</span></h2>
+        <p>Open an agent and its systems spin around it: screen, files, editor, changes, commands, browser and a real Android phone. Spin the ring.</p>
       </header>
-      <figure class="stage-shot tilt"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/map.mp4" muted loop playsinline preload="none"></video></figure>
-      <div class="feats">
-        <article><span>Equipas e Chiefs</span><p>Cada equipa tem quem a lidere. O Clipy cria-te equipas inteiras a partir de uma frase.</p></article>
-        <article><span>Envios que se veem</span><p>Um enxame de partículas leva o pedido pela linha, com uma pílula a dizer o que vai lá dentro.</p></article>
-        <article><span>Quem fala, diz o quê</span><p>Por baixo de cada agente aparece o que está a fazer agora, sem abrires nada.</p></article>
+
+      <div class="rev">
+        <div class="rev-stage">
+          <div class="rev-ring" id="rev-ring"></div>
+          <canvas class="rev-face" id="rev-face" aria-hidden="true"></canvas>
+          <div class="rev-name"><b>Nova</b><span>RESEARCH · CHIEF</span></div>
+          <div class="rev-ctl">
+            <button id="rev-prev" aria-label="Previous system"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <button id="rev-next" aria-label="Next system"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+          </div>
+        </div>
+        <div class="rev-panel" id="rev-panel" aria-live="polite"></div>
       </div>
     </section>
 
-    <!-- II · conversas -->
-    <section class="ch paper" id="conversas" data-n="II">
-      <header class="ch-head">
-        <span class="ch-n">II</span>
-        <h2 class="reveal-words">Tu pedes. <em>Eles fazem.</em></h2>
-        <p class="ch-lede">Cada passo à vista, aprovações no sítio certo, e o que mudou nos teus ficheiros, pedido a pedido.</p>
-      </header>
-      <div class="drift" id="drift" aria-hidden="true">
-        <span style="--x:6%;--y:12%;--z:.5">/resumo-da-manhã</span>
-        <span style="--x:58%;--y:6%;--z:1" class="big">aprovar</span>
-        <span style="--x:30%;--y:30%;--z:.7">clipy_show</span>
-        <span style="--x:72%;--y:34%;--z:.4">rotina · 09:00</span>
-        <span style="--x:10%;--y:58%;--z:.9" class="big">/nova-conversa</span>
-        <span style="--x:54%;--y:62%;--z:.6">ver o ecrã</span>
-        <span style="--x:80%;--y:78%;--z:.8">exportar.md</span>
-        <span style="--x:26%;--y:82%;--z:.45">pedir ao Max</span>
-      </div>
-      <figure class="stage-shot tilt"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/chat.mp4" muted loop playsinline preload="none"></video></figure>
-      <div class="feats">
-        <article><span>Conversas</span><p>Procura, fixa, muda o nome, exporta. Se outra conversa estiver a trabalhar, sabes logo.</p></article>
-        <article><span>Alterações</span><p>Os ficheiros que o agente mudou, agrupados pelo teu pedido, com o antes e o depois.</p></article>
-        <article><span>Aprovações</span><p>Tu decides o que importa: uma vez, sempre, ou não. O resto corre sozinho.</p></article>
-      </div>
-    </section>
-
-    <!-- III · o palco -->
-    <section class="ch night" id="palco" data-n="III">
-      <header class="ch-head">
-        <span class="ch-n">III</span>
-        <h2 class="reveal-words">O palco <em>inteiro.</em></h2>
-        <p class="ch-lede">Ecrã, ficheiros, editor, comandos, browser e um Android a sério. Abrem no lugar do agente, que fica no canto a ver.</p>
-      </header>
-      <div class="pair">
-        <figure class="stage-shot"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/tools.mp4" muted loop playsinline preload="none"></video><figcaption>As ferramentas ocupam o ecrã todo</figcaption></figure>
-        <figure class="stage-shot"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/revolver.mp4" muted loop playsinline preload="none"></video><figcaption>À volta de cada agente, os seus sistemas</figcaption></figure>
-      </div>
-    </section>
-
-    <!-- IV · no bolso -->
-    <section class="ch bronze" id="bolso" data-n="IV">
+    <!-- ───────────── Phone ───────────── -->
+    <section class="sec" id="pocket" aria-labelledby="pocket-t">
       <div class="pocket">
         <div class="pocket-copy">
-          <span class="ch-n">IV</span>
-          <h2 class="reveal-words">No <em>bolso.</em></h2>
-          <p class="ch-lede">A app do telemóvel liga-se ao teu computador com um código. Os mesmos agentes, as mesmas conversas, e o ecrã do PC ao vivo.</p>
+          <span class="eyebrow">In your pocket</span>
+          <h2 id="pocket-t">Leave your desk. <span class="grad">Not your team.</span></h2>
+          <p>Pair your phone with a QR code. Same agents, same conversations — talking straight to your computer, no accounts and no cloud in the middle.</p>
           <ul class="ticks">
-            <li><b>Mostrado</b> tudo o que te quiseram mostrar</li>
-            <li><b>Aprovar</b> pedidos de todos, num sítio</li>
-            <li><b>Ecrã ao vivo</b> o que estão a fazer, agora</li>
-            <li><b>Falar</b> uma chamada de voz com a equipa</li>
+            <li><b>Approve from anywhere.</b> A buzz when someone needs you; one tap to allow.</li>
+            <li><b>Call your agents.</b> Talk, and approve by voice: “yes”, “no” or “always”.</li>
+            <li><b>Watch your screen live.</b> See what they’re doing on your computer, from the couch.</li>
           </ul>
-          <a class="btn dark" href="./android/">Instalar no Android</a>
+          <div class="cta">
+            <a class="btn btn-primary" href="./android/">Get the Android app</a>
+            <a class="btn" href="#download">Or use any phone browser</a>
+          </div>
         </div>
-        <div class="phone"><video data-src="./media/phone-showcase.mp4" poster="./media/phone-showcase.jpg" muted loop playsinline preload="none"></video></div>
+        <div class="phone-wrap">
+          <div class="phone" id="phone">
+            <div class="ph-notch"></div>
+            <div class="ph-screen" id="ph-screen"></div>
+          </div>
+          <div class="call-card" aria-hidden="true">
+            <canvas id="call-face"></canvas>
+            <div><b>Call with Mila</b><span id="call-line">“Book the 9:30 with Ana?”</span></div>
+            <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- V · voz -->
-    <section class="ch night" id="voz" data-n="V">
-      <div class="voice">
-        <span class="ch-n">V</span>
-        <h2 class="reveal-words">Liga-<em>lhes.</em></h2>
-        <p class="ch-lede">Falas, o agente responde em voz alta, frase a frase. Pede aprovações e tu dizes "sim", "não" ou "sempre". Podes cortar-lhe a palavra.</p>
-        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-      </div>
-    </section>
-
-    <!-- VI · privado -->
-    <section class="ch paper" id="privado" data-n="VI">
-      <header class="ch-head">
-        <span class="ch-n">VI</span>
-        <h2 class="reveal-words">Tudo no teu <em>computador.</em></h2>
-        <p class="ch-lede">Usa o Claude Code e o OpenCode que já tens, com as tuas contas. O Clipy não tem servidores nem guarda palavras-passe.</p>
+    <!-- ───────────── Engines ───────────── -->
+    <section class="sec" aria-labelledby="eng-t">
+      <header class="sec-head">
+        <span class="eyebrow">Engines</span>
+        <h2 id="eng-t">Your accounts. <span class="grad">Your models.</span></h2>
+        <p>Clipy doesn’t sell you tokens. It drives the coding agents you already pay for, so every agent can run a different engine and model.</p>
       </header>
-      <div class="stats">
-        <div><b data-count="0">0</b><span>contas para criar</span></div>
-        <div><b data-count="0">0</b><span>dados enviados ao Clipy</span></div>
-        <div><b data-count="2">2</b><span>engines, as tuas</span></div>
-        <div><b data-count="100">100</b><span>% código aberto</span></div>
+      <div class="engines">
+        <article class="engine">
+          <div class="engine-h"><i class="mark claude">✳</i><div><b>Claude Code</b><span>by Anthropic</span></div></div>
+          <p>Uses your Claude subscription or API key. Pick Opus for hard problems, Haiku for quick chores.</p>
+          <code>npm i -g @anthropic-ai/claude-code</code>
+          <div class="models"><span>Opus</span><span>Sonnet</span><span>Haiku</span><span>Opus · 1M</span></div>
+        </article>
+        <article class="engine">
+          <div class="engine-h"><i class="mark oc">◧</i><div><b>OpenCode</b><span>open source</span></div></div>
+          <p>Bring any provider — including free models — and switch per agent from the chat.</p>
+          <code>npm i -g opencode-ai</code>
+          <div class="models"><span>Any provider</span><span>Free models</span><span>Local</span></div>
+        </article>
+        <article class="engine engine-x">
+          <div class="engine-h"><i class="mark mcp">⌁</i><div><b>And everything they plug into</b><span>MCP · skills · routines</span></div></div>
+          <p>Give an agent MCP servers and skills, set routines that run every morning, and let Clipy wake it up on time.</p>
+          <div class="models"><span>GitHub MCP</span><span>Routines · 09:00</span><span>Skills</span></div>
+        </article>
       </div>
     </section>
 
-    <!-- VII · transferir -->
-    <section class="ch dl" id="transferir" data-n="VII">
+    <!-- ───────────── Privacy ───────────── -->
+    <section class="sec" id="private" aria-labelledby="priv-t">
+      <div class="priv">
+        <div class="priv-copy">
+          <span class="eyebrow">Privacy</span>
+          <h2 id="priv-t">Runs on your computer. <span class="grad">Stays there.</span></h2>
+          <p>There’s no Clipy account and no Clipy server. Your agents, conversations and keys live in a folder on your machine — export it, back it up or delete it whenever you like.</p>
+        </div>
+        <ul class="priv-list">
+          <li><svg viewBox="0 0 24 24"><path d="M12 3.5l7 3v5.5c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6.5z"/></svg><div><b>Local first</b><span>Agents work inside their own folder unless you allow more.</span></div></li>
+          <li><svg viewBox="0 0 24 24"><path d="M7.5 3.5h9v17h-9z M11 17.5h2"/></svg><div><b>Phone talks to your PC</b><span>Paired with a one-time code, over your Wi-Fi or Tailscale.</span></div></li>
+          <li><svg viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z M12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg><div><b>Screen sharing is opt-in</b><span>View only, never recorded, off until you switch it on.</span></div></li>
+          <li><svg viewBox="0 0 24 24"><path d="M8.5 8l-4 4 4 4 M15.5 8l4 4-4 4"/></svg><div><b>Open source</b><span>Apache 2.0. Read every line on GitHub.</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ───────────── Download ───────────── -->
+    <section class="dl" id="download" aria-labelledby="dl-t">
       <canvas class="dl-clip" id="dl-clip" aria-hidden="true"></canvas>
       <div class="dl-copy">
-        <span class="ch-n">VII</span>
-        <h2 class="reveal-words">Leva o Clipy <em>para casa.</em></h2>
-        <p class="ch-lede">Grátis e de código aberto. Precisas de pelo menos uma engine com sessão iniciada: Claude Code ou OpenCode.</p>
-        <div class="hero-cta">
-          <a class="btn light" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe">Transferir para Windows</a>
-          <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">Transferir para Mac</a>
+        <h2 id="dl-t">Meet your team.</h2>
+        <p>Install Clipy, say hi, and it builds your first team with you in under a minute.</p>
+        <div class="cta center">
+          <a class="btn btn-primary" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe">Download for Windows</a>
+          <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">macOS</a>
+          <a class="btn" href="./android/">Android</a>
         </div>
-        <figure class="qr"><img src="./qr-android.svg" alt="QR da página da app Android" width="104" height="104"><figcaption><b>No telemóvel?</b><span>Lê o QR para instalar a app Android e liga-a ao computador.</span></figcaption></figure>
+        <p class="fine">Needs Claude Code or OpenCode installed — Clipy shows you how on first run.</p>
       </div>
-      <footer class="foot">
-        <span><img src="./logo-mark.svg" alt="" height="22"> Clipy · Apache-2.0</span>
-        <span>Sem conta, sem telemetria</span>
-        <a href="https://github.com/Duartepxto/Clipy" target="_blank" rel="noopener">Código</a>
-        <a href="./android/">Android</a>
-      </footer>
     </section>
   </main>
 
-  <div class="cinema" id="cinema" hidden role="dialog" aria-label="Trailer do Clipy">
-    <button class="cinema-x" id="cinema-x" type="button" aria-label="Fechar">×</button>
-    <video id="trailer" src="./media/trailer.mp4" controls playsinline preload="none"></video>
-  </div>
+  <footer class="foot">
+    <a class="brand" href="#top"><img src="./logo-mark.svg" alt="" width="22" height="22"><span>clipy</span></a>
+    <span>Agents that stick with you.</span>
+    <nav aria-label="Footer"><a href="https://github.com/Duartepxto/Clipy">GitHub</a><a href="https://github.com/Duartepxto/clipy-site/releases">Releases</a><a href="./android/">Android</a></nav>
+  </footer>
 
 </body>
 </html>
