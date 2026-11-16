@@ -3,202 +3,186 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>Clipy — agentes que ficam contigo</title>
-  <meta name="description" content="O Clipy junta o Claude Code e o OpenCode numa equipa de agentes de IA que vive num mapa à tua volta. No teu computador, com as tuas contas. Windows, Mac, Android e iPhone.">
-  <meta name="theme-color" content="#0f0e0c">
-  <meta property="og:title" content="Clipy — agentes que ficam contigo">
-  <meta property="og:description" content="A tua equipa de agentes de IA num mapa à tua volta. No teu computador, com as tuas contas.">
+  <title>Clipy — A Edição Bronze</title>
+  <meta name="description" content="O Clipy junta o Claude Code e o OpenCode numa equipa de agentes de IA que vive num mapa à tua volta. No teu computador, com as tuas contas, e no teu bolso.">
+  <meta name="theme-color" content="#0a0908">
+  <meta property="og:title" content="Clipy — A Edição Bronze">
+  <meta property="og:description" content="A tua equipa de agentes de IA num mapa à tua volta. No teu computador, com as tuas contas, e no teu bolso.">
   <meta property="og:image" content="./og.png">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="./favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clipy","applicationCategory":"ProductivityApplication","operatingSystem":"Windows, macOS, Android, iOS","license":"https://www.apache.org/licenses/LICENSE-2.0","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
-  <script type="module" crossorigin src="./assets/main-vSsBKzn4.js"></script>
+  <script type="module" crossorigin src="./assets/main-hF4VLTWE.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/tokens-DB6kLEO0.js">
-  <link rel="modulepreload" crossorigin href="./assets/intro-QW3Z_gb6.js">
+  <link rel="modulepreload" crossorigin href="./assets/intro-D65I1qoM.js">
   <link rel="stylesheet" crossorigin href="./assets/tokens-BfKX-kX-.css">
-  <link rel="stylesheet" crossorigin href="./assets/intro-CMijYy6I.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-bJtctppB.css">
 </head>
-<body data-theme="brasa" class="grain">
-  <div class="sky" aria-hidden="true"><i class="glow"></i><i class="dots"></i></div>
-
-  <header class="nav" id="nav">
-    <a class="brand" href="#top" aria-label="Clipy"><img class="brand-mark" src="./logo-mark.svg" alt="" height="34"><b>clipy</b></a>
-    <nav class="links" aria-label="Secções">
-      <a href="#equipa">Como funciona</a>
-      <a href="#trailer">Trailer</a>
-      <a href="#bolso">Telemóvel</a>
-      <a href="#transferir">Transferir</a>
+<body class="ed">
+  <header class="bar" id="bar">
+    <a class="bar-brand" href="#top" aria-label="Clipy"><img src="./logo-mark.svg" alt="" height="30"><b>clipy</b></a>
+    <span class="bar-ed">Edição Bronze <em>v0.5</em></span>
+    <nav class="bar-links" aria-label="Capítulos">
+      <a href="#equipa">A equipa</a><a href="#bolso">No bolso</a><a href="#privado">Privado</a>
     </nav>
-    <a class="gh" href="https://github.com/Duartepxto/Clipy" target="_blank" rel="noopener">
-      <svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38v-1.49c-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-      <span>GitHub</span>
-    </a>
+    <a class="bar-cta" href="#transferir">Transferir</a>
   </header>
 
+  <!-- índice fixo, com numeração romana -->
+  <nav class="index" id="index" aria-label="Índice">
+    <a href="#equipa"><span>A equipa</span><i>I</i></a>
+    <a href="#conversas"><span>Conversas</span><i>II</i></a>
+    <a href="#palco"><span>O palco</span><i>III</i></a>
+    <a href="#bolso"><span>No bolso</span><i>IV</i></a>
+    <a href="#voz"><span>Voz</span><i>V</i></a>
+    <a href="#privado"><span>Privado</span><i>VI</i></a>
+    <a href="#transferir"><span>Transferir</span><i>VII</i></a>
+  </nav>
+
   <main id="top">
-    <section class="hero" aria-labelledby="hero-t">
-      <canvas id="hero-clip" class="hero-clip" aria-hidden="true"></canvas>
-      <div class="hero-copy">
-        <h1 id="hero-t" class="kinetic"><span class="line">Agentes que</span> <span class="line swap" id="swap"><em>ficam contigo.</em></span></h1>
-        <p class="lede">O Clipy junta o Claude Code e o OpenCode que já usas numa equipa de agentes que vive num mapa à tua volta. Trabalham no teu computador, com as tuas contas, e mostram-te o que estão a fazer.</p>
-        <div class="cta">
-          <a class="btn primary" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M0 2.3 6.5 1.4v6.2H0zM7.3 1.3 16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zM7.3 8.4H16V16l-8.7-1.2z"/></svg>Transferir para Windows</a>
-          <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M11.2 8.5c0-1.9 1.5-2.7 1.6-2.8-.9-1.3-2.2-1.5-2.7-1.5-1.1-.1-2.2.7-2.8.7-.6 0-1.5-.7-2.4-.6-1.3 0-2.4.7-3.1 1.9-1.3 2.3-.3 5.6.9 7.4.6.9 1.3 1.9 2.3 1.8.9 0 1.3-.6 2.4-.6s1.4.6 2.4.6c1 0 1.6-.9 2.2-1.8.7-1 1-2 1-2.1 0 0-1.8-.7-1.8-3zM9.4 2.9c.5-.6.9-1.5.8-2.4-.8 0-1.7.5-2.3 1.1-.5.5-.9 1.4-.8 2.3.9.1 1.7-.4 2.3-1z"/></svg>Mac</a>
-          <a class="btn ghost" href="#trailer"><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M4.5 2.6v10.8c0 .5.55.8.97.53l8.4-5.4a.63.63 0 0 0 0-1.06l-8.4-5.4a.63.63 0 0 0-.97.53z"/></svg>Ver o trailer</a>
+    <!-- abertura: a moldura com o nome da edição; o Clipy forma-se lá dentro e a moldura abre-se ao descer -->
+    <section class="gate" id="gate" aria-labelledby="gate-t">
+      <div class="gate-stick">
+        <canvas class="gate-clip" id="gate-clip" aria-hidden="true"></canvas>
+        <div class="gate-frame" id="gate-frame" aria-hidden="true"></div>
+        <div class="gate-title" id="gate-t">
+          <span class="g-small">Clipy apresenta</span>
+          <span class="g-big">A Edição <em>Bronze</em></span>
+          <span class="g-small">Novembro 2026 · v0.5</span>
         </div>
-        <p class="fine">Grátis e de código aberto · Apache-2.0 · os teus dados não saem do teu computador</p>
-      </div>
-    </section>
-
-    <section class="ticker" aria-label="O que tem">
-      <div class="ticker-row" data-speed="1"><span>Mapa da equipa</span><i></i><span>Revólver de sistemas</span><i></i><span>Aprovações</span><i></i><span>Rotinas</span><i></i><span>Memória</span><i></i><span>Telemóvel</span><i></i><span>Canais</span><i></i></div>
-      <div class="ticker-row out" data-speed="-1"><span>Claude Code</span><i></i><span>OpenCode</span><i></i><span>No teu computador</span><i></i><span>Com as tuas contas</span><i></i><span>Sem telemetria</span><i></i><span>Código aberto</span><i></i></div>
-    </section>
-
-    <section class="chapter" id="equipa">
-      <div class="copy">
-        <span class="kicker" data-scramble>A equipa</span>
-        <h2 class="split">Uma equipa, não mais um separador.</h2>
-        <p>Tu ao centro, as equipas à volta, cada uma com um Chief. Pedes uma coisa e vês o trabalho viajar pela linha até ao agente certo: um enxame de partículas, com uma pílula a dizer o que leva, e a resposta a voltar pelo mesmo caminho.</p>
-      </div>
-      <figure class="window"><video data-src="./media/map.mp4" muted loop playsinline preload="none"></video></figure>
-    </section>
-
-    <section class="chapter flip" id="revolver">
-      <div class="copy">
-        <span class="kicker" data-scramble>O revólver</span>
-        <h2 class="split">Cada agente, os seus sistemas.</h2>
-        <p>Perfil, engine, computador, apps, aprovações, rotinas, memória e atividade giram à volta dele como as câmaras de um tambor. O que escolhes abre no sítio do chat; fechas e o chat volta.</p>
-      </div>
-      <figure class="window"><video data-src="./media/revolver.mp4" muted loop playsinline preload="none"></video></figure>
-    </section>
-
-    <section class="chapter" id="ferramentas">
-      <div class="copy">
-        <span class="kicker" data-scramble>As ferramentas</span>
-        <h2 class="split">O que fazem, à vista.</h2>
-        <p>Ficheiros, editor, comandos, browser e telemóvel abrem no lugar do agente, que fica no canto com a cara do que está a fazer. O chat não sai do sítio.</p>
-      </div>
-      <figure class="window"><video data-src="./media/tools.mp4" muted loop playsinline preload="none"></video></figure>
-    </section>
-
-    <section class="faces-sec" id="caras" aria-labelledby="caras-t">
-      <span class="kicker" data-scramble>As caras</span>
-      <h2 id="caras-t" class="split">Sabes o que fazem sem abrir nada.</h2>
-      <p>Cada agente é uma personagem de partículas que olha para o teu rato. A cara diz o que está a fazer. Toca numa para a acordar.</p>
-      <div class="faces" id="faces"></div>
-    </section>
-
-    <section class="chapter flip" id="conversa">
-      <div class="copy">
-        <span class="kicker" data-scramble>A conversa</span>
-        <h2 class="split">Tu aprovas o que importa.</h2>
-        <p>Vês cada passo do trabalho. Antes de mexer em ficheiros ou correr comandos, o agente pergunta: permitir, recusar ou permitir sempre. Quando precisa de uma decisão, dá-te opções.</p>
-        <ul class="ticks"><li>Três níveis de aprovação por agente</li><li>Contexto, modelo e esforço à mão</li><li>Ditado e anexos na caixa de escrever</li></ul>
-      </div>
-      <figure class="window"><video data-src="./media/chat.mp4" muted loop playsinline preload="none"></video></figure>
-    </section>
-
-    <section class="chapter" id="mostram">
-      <div class="copy">
-        <span class="kicker" data-scramble>Mostram-te</span>
-        <h2 class="split">Quando fazem algo, mostram.</h2>
-        <p>Uma página, um PDF, uma imagem ou o ecrã do computador, ao lado do agente e à escala real. Se for mesmo importante, pedem-te para olhar.</p>
-      </div>
-      <figure class="window"><video data-src="./media/show.mp4" muted loop playsinline preload="none"></video></figure>
-    </section>
-
-    <section class="chapter flip" id="entre">
-      <div class="copy">
-        <span class="kicker" data-scramble>Entre eles</span>
-        <h2 class="split">Falam uns com os outros.</h2>
-        <p>O Clipy pede à Nova, a Nova responde, e tu vês o pedido e a resposta a viajar no mapa. Quem recebe dá uma volta e acende-se. Em canais, passam a vez com @Nome.</p>
-      </div>
-      <figure class="window"><video data-src="./media/handoff.mp4" muted loop playsinline preload="none"></video></figure>
-    </section>
-
-    <section class="cinema" id="trailer" aria-labelledby="trailer-t">
-      <div class="cinema-stick">
-        <div class="cinema-title"><span class="kicker">Um minuto</span><h2 id="trailer-t">O Clipy em ação.</h2></div>
-        <div class="cinema-frame" id="cinema">
-          <video id="cinema-video" data-src="./media/trailer.mp4" muted loop playsinline preload="none"></video>
-          <button class="cinema-sound" id="cinema-sound" type="button" aria-pressed="false"><span class="on">Com som</span><span class="off">Sem som</span></button>
+        <div class="hero" id="hero">
+          <h1><span class="h-l">Agentes que</span> <em class="h-l">ficam contigo.</em></h1>
+          <p>O Clipy junta o Claude Code e o OpenCode que já usas numa equipa que vive num mapa à tua volta. Trabalham no teu computador, com as tuas contas. E vão contigo no bolso.</p>
+          <div class="hero-cta">
+            <a class="btn light" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe">Transferir para Windows</a>
+            <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">Mac</a>
+            <a class="btn" href="./android/">Android</a>
+          </div>
         </div>
+        <span class="scroll-hint" id="hint" aria-hidden="true">Desce</span>
       </div>
     </section>
 
-    <section class="chapter" id="definicoes">
-      <div class="copy">
-        <span class="kicker" data-scramble>As definições</span>
-        <h2 class="split">Tudo à volta de ti.</h2>
-        <p>Engines, chaves, telemóvel, aparência, uso e dados giram à volta do Clipy, tal como os sistemas de cada agente. Nada abre por cima do mapa.</p>
+    <!-- I · a equipa -->
+    <section class="ch night" id="equipa" data-n="I">
+      <header class="ch-head">
+        <span class="ch-n">I</span>
+        <h2 class="reveal-words">Uma equipa, <em>à tua volta.</em></h2>
+        <p class="ch-lede">Tu ao centro, as equipas à volta, cada uma com um Chief. Pedes uma coisa e vês o trabalho a viajar pela linha até ao agente certo.</p>
+      </header>
+      <figure class="stage-shot tilt"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/map.mp4" muted loop playsinline preload="none"></video></figure>
+      <div class="feats">
+        <article><span>Equipas e Chiefs</span><p>Cada equipa tem quem a lidere. O Clipy cria-te equipas inteiras a partir de uma frase.</p></article>
+        <article><span>Envios que se veem</span><p>Um enxame de partículas leva o pedido pela linha, com uma pílula a dizer o que vai lá dentro.</p></article>
+        <article><span>Quem fala, diz o quê</span><p>Por baixo de cada agente aparece o que está a fazer agora, sem abrires nada.</p></article>
       </div>
-      <figure class="window"><video data-src="./media/settings.mp4" muted loop playsinline preload="none"></video></figure>
     </section>
 
-    <section class="phone-sec" id="bolso" aria-labelledby="bolso-t">
-      <div class="copy">
-        <span class="kicker" data-scramble>No bolso</span>
-        <h2 id="bolso-t" class="split">E vão contigo.</h2>
-        <p>Uma app para Android que o próprio computador te entrega por QR, e a mesma app no navegador do iPhone. Equipas, canais, conversas e aprovações, sem lojas nem contas: fala diretamente com o teu computador, em casa ou pelo Tailscale.</p>
-        <ul class="ticks"><li>Uma chave por telemóvel, revogável no computador</li><li>Aprova pedidos onde estiveres</li><li>Android nativo · iPhone no ecrã principal</li></ul>
+    <!-- II · conversas -->
+    <section class="ch paper" id="conversas" data-n="II">
+      <header class="ch-head">
+        <span class="ch-n">II</span>
+        <h2 class="reveal-words">Tu pedes. <em>Eles fazem.</em></h2>
+        <p class="ch-lede">Cada passo à vista, aprovações no sítio certo, e o que mudou nos teus ficheiros, pedido a pedido.</p>
+      </header>
+      <div class="drift" id="drift" aria-hidden="true">
+        <span style="--x:6%;--y:12%;--z:.5">/resumo-da-manhã</span>
+        <span style="--x:58%;--y:6%;--z:1" class="big">aprovar</span>
+        <span style="--x:30%;--y:30%;--z:.7">clipy_show</span>
+        <span style="--x:72%;--y:34%;--z:.4">rotina · 09:00</span>
+        <span style="--x:10%;--y:58%;--z:.9" class="big">/nova-conversa</span>
+        <span style="--x:54%;--y:62%;--z:.6">ver o ecrã</span>
+        <span style="--x:80%;--y:78%;--z:.8">exportar.md</span>
+        <span style="--x:26%;--y:82%;--z:.45">pedir ao Max</span>
       </div>
-      <div class="phone"><video data-src="./media/phone.mp4" muted loop playsinline preload="none"></video><i class="notch"></i></div>
+      <figure class="stage-shot tilt"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/chat.mp4" muted loop playsinline preload="none"></video></figure>
+      <div class="feats">
+        <article><span>Conversas</span><p>Procura, fixa, muda o nome, exporta. Se outra conversa estiver a trabalhar, sabes logo.</p></article>
+        <article><span>Alterações</span><p>Os ficheiros que o agente mudou, agrupados pelo teu pedido, com o antes e o depois.</p></article>
+        <article><span>Aprovações</span><p>Tu decides o que importa: uma vez, sempre, ou não. O resto corre sozinho.</p></article>
+      </div>
     </section>
 
-    <section class="themes-sec" id="ceus" aria-labelledby="ceus-t">
-      <div class="copy">
-        <span class="kicker" data-scramble>Cinco céus</span>
-        <h2 id="ceus-t" class="split">Escolhe o céu deles.</h2>
-        <p>Brasa, Noite estrelada, Pôr do sol, Aurora e Oceano. Experimenta aqui: esta página muda contigo.</p>
-        <div class="swatches" role="radiogroup" aria-label="Tema da página">
-          <button role="radio" data-theme="brasa" aria-checked="true" style="--a:#1a1612;--b:#ffb04d">Brasa</button>
-          <button role="radio" data-theme="noite" style="--a:#0d1530;--b:#7db4ff">Noite estrelada</button>
-          <button role="radio" data-theme="por-do-sol" style="--a:#2a1220;--b:#ff7a5c">Pôr do sol</button>
-          <button role="radio" data-theme="aurora" style="--a:#0a1d1b;--b:#5cf0b4">Aurora</button>
-          <button role="radio" data-theme="oceano" style="--a:#06202a;--b:#4fc3e8">Oceano</button>
+    <!-- III · o palco -->
+    <section class="ch night" id="palco" data-n="III">
+      <header class="ch-head">
+        <span class="ch-n">III</span>
+        <h2 class="reveal-words">O palco <em>inteiro.</em></h2>
+        <p class="ch-lede">Ecrã, ficheiros, editor, comandos, browser e um Android a sério. Abrem no lugar do agente, que fica no canto a ver.</p>
+      </header>
+      <div class="pair">
+        <figure class="stage-shot"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/tools.mp4" muted loop playsinline preload="none"></video><figcaption>As ferramentas ocupam o ecrã todo</figcaption></figure>
+        <figure class="stage-shot"><div class="win"><i></i><i></i><i></i></div><video data-src="./media/revolver.mp4" muted loop playsinline preload="none"></video><figcaption>À volta de cada agente, os seus sistemas</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- IV · no bolso -->
+    <section class="ch bronze" id="bolso" data-n="IV">
+      <div class="pocket">
+        <div class="pocket-copy">
+          <span class="ch-n">IV</span>
+          <h2 class="reveal-words">No <em>bolso.</em></h2>
+          <p class="ch-lede">A app do telemóvel liga-se ao teu computador com um código. Os mesmos agentes, as mesmas conversas, e o ecrã do PC ao vivo.</p>
+          <ul class="ticks">
+            <li><b>Mostrado</b> tudo o que te quiseram mostrar</li>
+            <li><b>Aprovar</b> pedidos de todos, num sítio</li>
+            <li><b>Ecrã ao vivo</b> o que estão a fazer, agora</li>
+            <li><b>Falar</b> uma chamada de voz com a equipa</li>
+          </ul>
+          <a class="btn dark" href="./android/">Instalar no Android</a>
         </div>
-      </div>
-      <figure class="window"><video data-src="./media/themes.mp4" muted loop playsinline preload="none"></video></figure>
-    </section>
-
-    <section class="trust" id="teu" aria-labelledby="teu-t">
-      <span class="kicker" data-scramble>Teu</span>
-      <h2 id="teu-t" class="split">Teu, do princípio ao fim.</h2>
-      <div class="cards">
-        <article><b>No teu computador</b><p>Agentes, conversas e definições ficam em <code>~/.clipy</code>. Exportas tudo num clique.</p></article>
-        <article><b>Com as tuas contas</b><p>Usa as CLIs que já tens, com as tuas sessões. O Clipy nunca guarda palavras-passe.</p></article>
-        <article><b>Tu decides</b><p>Cada agente pergunta antes de mexer no que importa, ao nível que escolheres.</p></article>
-        <article><b>Sem intermediários</b><p>Sem conta Clipy, sem servidores nossos, sem telemetria. O telemóvel liga-se direto ao computador.</p></article>
+        <div class="phone"><video data-src="./media/phone-showcase.mp4" poster="./media/phone-showcase.jpg" muted loop playsinline preload="none"></video></div>
       </div>
     </section>
 
-    <section class="get" id="transferir" aria-labelledby="get-t">
-      <img class="get-icon" src="./icon-512.png" alt="" width="120" height="120">
-      <h2 id="get-t">Põe a tua equipa a trabalhar.</h2>
-      <p>Windows e Mac, com a app do telemóvel incluída. Precisas de pelo menos uma engine com sessão iniciada: Claude Code ou OpenCode.</p>
-      <div class="cta center">
-        <a class="btn primary" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe">Transferir para Windows</a>
-        <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">Transferir para Mac</a>
-        <a class="btn" href="./android/">Android</a>
+    <!-- V · voz -->
+    <section class="ch night" id="voz" data-n="V">
+      <div class="voice">
+        <span class="ch-n">V</span>
+        <h2 class="reveal-words">Liga-<em>lhes.</em></h2>
+        <p class="ch-lede">Falas, o agente responde em voz alta, frase a frase. Pede aprovações e tu dizes "sim", "não" ou "sempre". Podes cortar-lhe a palavra.</p>
+        <div class="wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
       </div>
-      <figure class="qr"><img src="./qr-android.svg" alt="QR da página da app Android" width="112" height="112"><figcaption><b>No telemóvel Android?</b><span>Lê o QR: abre a página para instalar a app. Depois, no Clipy do computador, <em>Definições → Telemóvel</em> mostra o QR para a ligar.</span></figcaption></figure>
-      <div class="terminal" aria-label="A partir do código">
-        <code><span>$</span> npm i -g opencode-ai <em># ou: npm i -g @anthropic-ai/claude-code</em></code>
-        <code><span>$</span> git clone https://github.com/Duartepxto/Clipy &amp;&amp; cd Clipy</code>
-        <code><span>$</span> pnpm install &amp;&amp; pnpm dev</code>
+    </section>
+
+    <!-- VI · privado -->
+    <section class="ch paper" id="privado" data-n="VI">
+      <header class="ch-head">
+        <span class="ch-n">VI</span>
+        <h2 class="reveal-words">Tudo no teu <em>computador.</em></h2>
+        <p class="ch-lede">Usa o Claude Code e o OpenCode que já tens, com as tuas contas. O Clipy não tem servidores nem guarda palavras-passe.</p>
+      </header>
+      <div class="stats">
+        <div><b data-count="0">0</b><span>contas para criar</span></div>
+        <div><b data-count="0">0</b><span>dados enviados ao Clipy</span></div>
+        <div><b data-count="2">2</b><span>engines, as tuas</span></div>
+        <div><b data-count="100">100</b><span>% código aberto</span></div>
+      </div>
+    </section>
+
+    <!-- VII · transferir -->
+    <section class="ch dl" id="transferir" data-n="VII">
+      <canvas class="dl-clip" id="dl-clip" aria-hidden="true"></canvas>
+      <div class="dl-copy">
+        <span class="ch-n">VII</span>
+        <h2 class="reveal-words">Leva o Clipy <em>para casa.</em></h2>
+        <p class="ch-lede">Grátis e de código aberto. Precisas de pelo menos uma engine com sessão iniciada: Claude Code ou OpenCode.</p>
+        <div class="hero-cta">
+          <a class="btn light" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe">Transferir para Windows</a>
+          <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">Transferir para Mac</a>
+        </div>
+        <figure class="qr"><img src="./qr-android.svg" alt="QR da página da app Android" width="104" height="104"><figcaption><b>No telemóvel?</b><span>Lê o QR para instalar a app Android e liga-a ao computador.</span></figcaption></figure>
       </div>
       <footer class="foot">
-        <span>Clipy · Apache-2.0</span>
+        <span><img src="./logo-mark.svg" alt="" height="22"> Clipy · Apache-2.0</span>
         <span>Sem conta, sem telemetria</span>
-        <a href="https://github.com/Duartepxto/Clipy" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://github.com/Duartepxto/Clipy" target="_blank" rel="noopener">Código</a>
+        <a href="./android/">Android</a>
       </footer>
     </section>
   </main>
-
-  <div class="buddy" id="buddy" aria-hidden="true"><div class="buddy-say" id="buddy-say"></div><div class="buddy-body" data-clip="buddy"></div></div>
 
 </body>
 </html>
