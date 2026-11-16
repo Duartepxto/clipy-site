@@ -14,11 +14,10 @@
   <link rel="icon" href="./favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clipy","applicationCategory":"ProductivityApplication","operatingSystem":"Windows, macOS, Android, iOS","license":"https://www.apache.org/licenses/LICENSE-2.0","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
-  <script type="module" crossorigin src="./assets/main-hF4VLTWE.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/tokens-DB6kLEO0.js">
-  <link rel="modulepreload" crossorigin href="./assets/intro-D65I1qoM.js">
-  <link rel="stylesheet" crossorigin href="./assets/tokens-BfKX-kX-.css">
-  <link rel="stylesheet" crossorigin href="./assets/main-bJtctppB.css">
+  <script type="module" crossorigin src="./assets/main-Bi9lTmCl.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/intro-dnGxPThm.js">
+  <link rel="stylesheet" crossorigin href="./assets/intro-BfKX-kX-.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-DZCjysjV.css">
 </head>
 <body class="ed">
   <header class="bar" id="bar">
@@ -59,6 +58,7 @@
             <a class="btn light" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe">Transferir para Windows</a>
             <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">Mac</a>
             <a class="btn" href="./android/">Android</a>
+            <button class="btn play" id="play" type="button"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><path fill="currentColor" d="M4.5 2.6v10.8c0 .5.55.8.97.53l8.4-5.4a.63.63 0 0 0 0-1.06l-8.4-5.4a.63.63 0 0 0-.97.53z"/></svg>Ver o trailer</button>
           </div>
         </div>
         <span class="scroll-hint" id="hint" aria-hidden="true">Desce</span>
@@ -183,6 +183,11 @@
       </footer>
     </section>
   </main>
+
+  <div class="cinema" id="cinema" hidden role="dialog" aria-label="Trailer do Clipy">
+    <button class="cinema-x" id="cinema-x" type="button" aria-label="Fechar">×</button>
+    <video id="trailer" src="./media/trailer.mp4" controls playsinline preload="none"></video>
+  </div>
 
 </body>
 </html>
