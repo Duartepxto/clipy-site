@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Clipy — your AI agents, on a map around you</title>
-  <meta name="description" content="Clipy turns the Claude Code and OpenCode you already use into a team of AI agents that lives on a map around you. On your computer, with your accounts, and in your pocket.">
+  <meta name="description" content="Clipy turns Claude Code, OpenCode and Codex into a team of AI agents that lives on a map around you. On your computer, with your accounts, and in your pocket.">
   <meta name="theme-color" content="#0f0e0c">
   <meta property="og:title" content="Clipy — your AI agents, on a map around you">
   <meta property="og:description" content="A team of AI agents on your computer, with your accounts. Watch them work, approve what matters, take them with you.">
@@ -14,9 +14,10 @@
   <link rel="icon" href="./favicon.svg">
   <link rel="apple-touch-icon" href="./apple-touch-icon.png">
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Clipy","applicationCategory":"ProductivityApplication","operatingSystem":"Windows, macOS, Android, iOS","license":"https://www.apache.org/licenses/LICENSE-2.0","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
-  <script type="module" crossorigin src="./assets/main-BwiXjEih.js"></script>
-  <link rel="modulepreload" crossorigin href="./assets/intro-C39DGfXq.js">
-  <link rel="stylesheet" crossorigin href="./assets/intro-B_9eifOO.css">
+  <script type="module" crossorigin src="./assets/main-J8qYaR8_.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/intro-DNR2McSd.js">
+  <link rel="stylesheet" crossorigin href="./assets/intro-BpKlROB6.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-DWiRC5a6.css">
 </head>
 <body>
   <a class="skip" href="#team">Skip to content</a>
@@ -35,9 +36,9 @@
     <section class="hero" aria-labelledby="hero-t">
       <canvas class="hero-clip" id="hero-clip" aria-hidden="true"></canvas>
       <div class="hero-copy">
-        <a class="pill" href="https://github.com/Duartepxto/clipy-site/releases/latest"><b>New</b> Voice calls, phone emulator and a custom installer <span aria-hidden="true">→</span></a>
+        <a class="pill" href="https://github.com/Duartepxto/clipy-site/releases/latest"><b>v0.7.1</b> Codex with ChatGPT sign-in <span aria-hidden="true">→</span></a>
         <h1 id="hero-t">Your AI agents,<br><span class="grad">on a map around you.</span></h1>
-        <p class="lede">Clipy turns the Claude Code and OpenCode you already use into a team. Each agent gets a face, a folder and a job. You watch them work, approve what matters and take them with you.</p>
+        <p class="lede">Clipy turns Claude Code, OpenCode and Codex into a team. Each agent gets a face, a folder and a job. You watch them work, approve what matters and take them with you.</p>
         <div class="cta">
           <a class="btn btn-primary" data-dl="win" href="https://github.com/Duartepxto/clipy-site/releases/latest/download/Clipy-Setup.exe"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M0 2.3 6.5 1.4v6.2H0zm7.3-1L16 0v7.6H7.3zM0 8.4h6.5v6.2L0 13.7zm7.3 0H16V16l-8.7-1.2z"/></svg>Download for Windows</a>
           <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest"><svg viewBox="0 0 16 16" width="15" height="15" aria-hidden="true"><path fill="currentColor" d="M11.2 8.5c0-1.6 1.3-2.4 1.4-2.4-.8-1.1-2-1.3-2.4-1.3-1-.1-2 .6-2.5.6s-1.3-.6-2.2-.6C4.4 4.8 3.2 5.5 2.6 6.6c-1.2 2.1-.3 5.2.9 6.9.6.8 1.2 1.7 2.1 1.7.8 0 1.2-.5 2.2-.5s1.3.5 2.2.5c.9 0 1.5-.8 2-1.7.6-.9.9-1.9.9-1.9s-1.7-.7-1.7-3.1zM9.6 3.6c.5-.6.8-1.4.7-2.2-.7 0-1.5.5-2 1-.4.5-.8 1.3-.7 2.1.8.1 1.5-.4 2-.9z"/></svg>macOS</a>
@@ -54,6 +55,7 @@
       <div class="strip-logos">
         <b><i class="mark claude">✳</i>Claude Code</b>
         <b><i class="mark oc">◧</i>OpenCode</b>
+        <b><i class="mark codex">›_</i>Codex</b>
         <b><i class="mark mcp">⌁</i>MCP servers</b>
         <b><i class="mark">◎</i>Your skills</b>
       </div>
@@ -64,31 +66,51 @@
       <header class="sec-head">
         <span class="eyebrow">The map</span>
         <h2 id="team-t">A team that sits <span class="grad">around you.</span></h2>
-        <p>You in the middle, Clipy beside you, teams in orbit — each with a chief. Ask for something and watch the work travel down the line to the right agent. Try it.</p>
+        <p>Clipy in the middle, teams around it, each with a chief. Ask for something and watch the request travel down the line to the right agent, and the answer come back. This is the starter team Clipy sets up for you. Try it.</p>
       </header>
 
-      <div class="map" id="map" data-theme="brasa">
+      <div class="map app" id="map" data-theme="brasa">
+        <canvas class="sky" id="map-sky" aria-hidden="true"></canvas>
         <div class="map-grid" aria-hidden="true"></div>
+        <div class="map-top" aria-hidden="true">
+          <span class="mt-brand"><img src="./logo-mark.svg" alt="" width="14" height="14">clipy</span>
+          <span class="mt-crumb">clipy <em>···</em> <b>Team map</b></span>
+          <span class="mt-right"><span class="mt-working" id="map-working" hidden><i></i><span>1 working</span></span><span class="mt-btn" data-ic="plus">New</span></span>
+        </div>
+        <div class="world" id="map-world">
+          <svg class="links" id="map-links" width="1" height="1" aria-hidden="true"></svg>
+        </div>
         <canvas class="map-flows" id="map-flows" aria-hidden="true"></canvas>
-        <svg class="map-lines" id="map-lines" aria-hidden="true"></svg>
-        <div class="map-nodes" id="map-nodes"></div>
-        <div class="map-ask" role="group" aria-label="Try asking the team">
-          <span class="map-ask-l">Ask Clipy</span>
+        <div class="map-ctl" id="map-ctl">
+          <button type="button" id="map-legend-btn" aria-expanded="false"></button>
+          <i></i>
+          <button type="button" id="map-zoom-out" aria-label="Zoom out"></button>
+          <button type="button" id="map-zoom-in" aria-label="Zoom in"></button>
+          <button type="button" id="map-fit" title="Fit everything"></button>
+          <div class="legend" id="map-legend" hidden></div>
+        </div>
+        <div class="map-ask" role="group" aria-label="Try asking Clipy">
           <div class="chips" id="map-chips"></div>
+          <div class="mc-bar" aria-hidden="true">
+            <span class="mc-who"><img src="./logo-mark.svg" alt="" width="14" height="14">Clipy<span data-ic="chevDown"></span></span>
+            <span class="mc-text" id="mc-text">Ask Clipy anything…</span>
+            <span class="send-btn" id="mc-send"></span>
+          </div>
         </div>
-        <div class="map-themes" role="group" aria-label="Map theme">
-          <button data-theme="brasa" class="on" aria-label="Ember theme" style="--a:#ffb04d;--b:#3a2414"></button>
-          <button data-theme="noite" aria-label="Starry night theme" style="--a:#7db4ff;--b:#0d1530"></button>
-          <button data-theme="por-do-sol" aria-label="Sunset theme" style="--a:#ff7a3d;--b:#2a1220"></button>
-          <button data-theme="aurora" aria-label="Aurora theme" style="--a:#29f2a6;--b:#0a1d1b"></button>
-          <button data-theme="oceano" aria-label="Ocean theme" style="--a:#5cc8ff;--b:#072636"></button>
-        </div>
+      </div>
+      <div class="skies" role="group" aria-label="Map sky">
+        <span>Five skies, from Settings → Appearance:</span>
+        <button type="button" data-theme="brasa" class="on" style="--a:#ffb04d;--b:#3a2414">Ember</button>
+        <button type="button" data-theme="noite" style="--a:#7db4ff;--b:#0d1530">Starry night</button>
+        <button type="button" data-theme="por-do-sol" style="--a:#ff7a3d;--b:#2a1220">Sunset</button>
+        <button type="button" data-theme="aurora" style="--a:#29f2a6;--b:#0a1d1b">Aurora</button>
+        <button type="button" data-theme="oceano" style="--a:#5cc8ff;--b:#072636">Ocean</button>
       </div>
 
       <div class="grid3">
-        <article class="feat"><h3>Teams and chiefs</h3><p>Group agents by what they do. The chief of each team routes requests to the right teammate.</p></article>
-        <article class="feat"><h3>Work you can see</h3><p>Hand-offs fly down the line as light, with a label saying what’s inside. No log digging.</p></article>
-        <article class="feat"><h3>Status at a glance</h3><p>Under every face: working, replying, needs you. Agents set their own labels on long jobs.</p></article>
+        <article class="feat"><h3>Teams and chiefs</h3><p>Group agents by what they do. Clipy talks to each team’s chief, and the chief hands work to the right teammate.</p></article>
+        <article class="feat"><h3>Work you can see</h3><p>When one agent asks another, a swarm of light carries the request down the line, with a pill saying what’s inside.</p></article>
+        <article class="feat"><h3>Status at a glance</h3><p>Under every name: free, working, replying, needs you, done, stopped. On long jobs agents set their own label.</p></article>
       </div>
     </section>
 
@@ -97,7 +119,7 @@
       <header class="sec-head">
         <span class="eyebrow">Conversations</span>
         <h2 id="work-t">You ask. They do. <span class="grad">You stay in charge.</span></h2>
-        <p>Every step in plain sight. Approvals land where you are — on your desk or your phone — and agents show you what they made instead of telling you about it.</p>
+        <p>Every step in plain sight. Before touching files or running commands, an agent asks. When it made something, it shows you instead of telling you about it.</p>
       </header>
 
       <div class="work">
@@ -106,26 +128,27 @@
           <button role="tab" aria-selected="false" data-demo="show">Show, don’t tell</button>
           <button role="tab" aria-selected="false" data-demo="build">Build a team</button>
         </div>
-        <div class="app-win">
-          <div class="win-bar"><i></i><i></i><i></i><span id="chat-title">Max · Engineering</span></div>
-          <div class="chat">
-            <aside class="chat-side" aria-hidden="true">
-              <canvas id="chat-face"></canvas>
-              <b id="chat-name">Max</b>
-              <span id="chat-role">Engineer</span>
-              <em id="chat-state">free</em>
-            </aside>
-            <div class="chat-main">
-              <div class="chat-log" id="chat-log" aria-live="polite"></div>
-              <div class="composer" aria-hidden="true"><span id="composer-text">Message Max…</span><i class="send"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M12 19V5 M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></i></div>
+        <div class="app-win app" data-theme="brasa">
+          <div class="win-bar" aria-hidden="true"><i></i><i></i><i></i><span class="wb-crumb">clipy <em>···</em> <b id="chat-title">Max</b></span></div>
+          <div class="focus">
+            <div class="focus-map" aria-hidden="true">
+              <canvas class="sky" id="focus-sky"></canvas>
+              <div class="map-grid"></div>
+              <span class="back-link"><span data-ic="back"></span>Team map <kbd>esc</kbd></span>
+              <div class="focus-agent">
+                <canvas id="chat-face"></canvas>
+                <div class="rev-name"><h2 id="fa-name">Max</h2><div class="rev-role" id="fa-role">CHIEF · ENGINEERING</div><div class="rev-state" id="fa-state"><i></i><span>free</span></div></div>
+              </div>
             </div>
+            <aside class="column" id="chat-col" aria-label="Conversation"></aside>
           </div>
         </div>
+        <p class="demo-note">A scripted replay with the app’s own cards and wording. The buttons work.</p>
       </div>
 
       <div class="grid3">
-        <article class="feat"><h3>Ask once, always, or never</h3><p>Pick per agent: asks first, edits alone, or full auto. You can change your mind mid-conversation.</p></article>
-        <article class="feat"><h3>Changes, request by request</h3><p>Every file an agent touched, grouped by what you asked, with before and after — and undo.</p></article>
+        <article class="feat"><h3>Allow, always allow, or deny</h3><p>Each agent has its own level: asks first, edits alone, or autonomous. Switch it from the composer, mid-conversation.</p></article>
+        <article class="feat"><h3>Changes, request by request</h3><p>Every file an agent touched, grouped by what you asked, with before and after.</p></article>
         <article class="feat"><h3>Channels</h3><p>Put agents in a room. They read each other, hand over with @Name and reply when it’s their turn.</p></article>
       </div>
     </section>
@@ -134,22 +157,29 @@
     <section class="sec" id="tools" aria-labelledby="tools-t">
       <header class="sec-head">
         <span class="eyebrow">The revolver</span>
-        <h2 id="tools-t">Every agent comes with <span class="grad">a whole workstation.</span></h2>
-        <p>Open an agent and its systems spin around it: screen, files, editor, changes, commands, browser and a real Android phone. Spin the ring.</p>
+        <h2 id="tools-t">Every agent comes with <span class="grad">its own systems.</span></h2>
+        <p>Open an agent and its systems spin around it: profile, engine, computer, apps, approvals, routines, memory and activity. The one on the right opens where the chat was. Spin it.</p>
       </header>
 
-      <div class="rev">
-        <div class="rev-stage">
-          <div class="rev-ring" id="rev-ring"></div>
-          <canvas class="rev-face" id="rev-face" aria-hidden="true"></canvas>
-          <div class="rev-name"><b>Nova</b><span>RESEARCH · CHIEF</span></div>
-          <div class="rev-ctl">
-            <button id="rev-prev" aria-label="Previous system"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-            <button id="rev-next" aria-label="Next system"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
-          </div>
+      <div class="rev-wrap app" data-theme="brasa">
+        <div class="rev-stage" id="rev-stage" tabindex="0" aria-label="Max’s systems. Use the arrow keys to spin.">
+          <canvas class="sky" id="rev-sky" aria-hidden="true"></canvas>
+          <div class="rev" id="rev"></div>
         </div>
-        <div class="rev-panel" id="rev-panel" aria-live="polite"></div>
+        <section class="rev-panel panel kp" id="rev-panel" aria-live="polite"></section>
       </div>
+
+      <div class="recs">
+        <figure class="rec">
+          <div class="rec-win"><video data-lazy muted loop playsinline preload="none" width="800" height="500" poster="./media/tools-poster.jpg" aria-label="Recording: Max’s tools — files, commands and browser — opening in the agent’s place"><source data-src="./media/tools.mp4" type="video/mp4"></video></div>
+          <figcaption><b>Tools above the chat.</b> Screen, files, editor, changes, commands, browser and an Android phone open in the agent’s place.</figcaption>
+        </figure>
+        <figure class="rec">
+          <div class="rec-win"><video data-lazy muted loop playsinline preload="none" width="800" height="500" poster="./media/settings-poster.jpg" aria-label="Recording: settings spinning around Clipy, each page opening in the side column"><source data-src="./media/settings.mp4" type="video/mp4"></video></div>
+          <figcaption><b>Settings spin around Clipy.</b> About you, engines, keys, phone, appearance, chat and alerts, agents, usage, data.</figcaption>
+        </figure>
+      </div>
+      <p class="demo-note center">Recordings of the real app, made by a script with agents doing real work.</p>
     </section>
 
     <!-- ───────────── Phone ───────────── -->
@@ -158,11 +188,11 @@
         <div class="pocket-copy">
           <span class="eyebrow">In your pocket</span>
           <h2 id="pocket-t">Leave your desk. <span class="grad">Not your team.</span></h2>
-          <p>Pair your phone with a QR code. Same agents, same conversations — talking straight to your computer, no accounts and no cloud in the middle.</p>
+          <p>Pair your phone with a QR code. Same agents, same conversations, talking straight to your computer. No store, no account, no cloud in the middle.</p>
           <ul class="ticks">
-            <li><b>Approve from anywhere.</b> A buzz when someone needs you; one tap to allow.</li>
+            <li><b>Approve from anywhere.</b> Requests land in the Approve tab with a buzz; one tap to allow.</li>
             <li><b>Call your agents.</b> Talk, and approve by voice: “yes”, “no” or “always”.</li>
-            <li><b>Watch your screen live.</b> See what they’re doing on your computer, from the couch.</li>
+            <li><b>Watch your screen live.</b> In Shown, see what they made and, if you allow it, your computer’s screen.</li>
           </ul>
           <div class="cta">
             <a class="btn btn-primary" href="./android/">Get the Android app</a>
@@ -171,14 +201,11 @@
         </div>
         <div class="phone-wrap">
           <div class="phone" id="phone">
-            <div class="ph-notch"></div>
-            <div class="ph-screen" id="ph-screen"></div>
+            <div class="ph-screen">
+              <video id="phone-video" data-lazy muted loop playsinline preload="none" width="540" height="1172" poster="./media/phone-poster.jpg" aria-label="Recording of the real phone app: pairing with a code, the home screen, the tabs, and a conversation with Clipy"><source data-src="./media/phone.mp4" type="video/mp4"></video>
+            </div>
           </div>
-          <div class="call-card" aria-hidden="true">
-            <canvas id="call-face"></canvas>
-            <div><b>Call with Mila</b><span id="call-line">“Book the 9:30 with Ana?”</span></div>
-            <div class="wave"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
-          </div>
+          <p class="demo-note center">The phone app, recorded in one take.</p>
         </div>
       </div>
     </section>
@@ -203,7 +230,12 @@
           <code>npm i -g opencode-ai</code>
           <div class="models"><span>Any provider</span><span>Free models</span><span>Local</span></div>
         </article>
-        <article class="engine engine-x">
+        <article class="engine">
+          <div class="engine-h"><i class="mark codex">›_</i><div><b>Codex</b><span>by OpenAI</span></div></div>
+          <p>Run codex login to sign in with ChatGPT, then pick Codex in your agent’s Engine panel.</p>
+          <code>npm i -g @openai/codex@latest</code>
+        </article>
+        <article class="engine">
           <div class="engine-h"><i class="mark mcp">⌁</i><div><b>And everything they plug into</b><span>MCP · skills · routines</span></div></div>
           <p>Give an agent MCP servers and skills, set routines that run every morning, and let Clipy wake it up on time.</p>
           <div class="models"><span>GitHub MCP</span><span>Routines · 09:00</span><span>Skills</span></div>
@@ -239,7 +271,7 @@
           <a class="btn" data-dl="mac" href="https://github.com/Duartepxto/clipy-site/releases/latest">macOS</a>
           <a class="btn" href="./android/">Android</a>
         </div>
-        <p class="fine">Needs Claude Code or OpenCode installed — Clipy shows you how on first run.</p>
+        <p class="fine">Needs Claude Code, OpenCode or Codex installed — Clipy shows you how on first run.</p>
       </div>
     </section>
   </main>
